@@ -1,0 +1,293 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+    font-size: 12px;
+    color: #044F41;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url(assets/images/mobilebackground.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+
+.container{
+    width: 100%;
+    background:#DFE00E;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    padding:3rem 4.5rem;
+    border-radius: 30px 30px 0 0;
+    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+    gap: 2rem;
+}
+
+.form-title{
+    font-size:2rem;
+    font-weight:bold;
+    text-align:left
+
+}
+
+.input-group{
+    margin-bottom: 10px;
+
+}
+
+
+input{
+    width:100%;
+    padding: 8px 5px;
+    padding-left:1.5rem;
+    font-size:12px;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid #b6b6b6;
+    
+}
+
+input:focus{
+    outline:transparent;
+    border: 1px solid #65d3ff;
+}
+
+input::placeholder{
+    color:transparent;
+}
+
+.input-group label{
+    color:#044F41;
+    position:relative;
+    top: -2em;
+    left: 1em;
+    cursor:auto;
+    transition:0.3s ease all;
+}
+
+.input-group label{
+    width: 70px;
+}
+
+input:focus~label,input:not(:placeholder-shown)~label{
+    top:-4em;
+}
+
+.rm{
+    display: grid;
+    grid-template-columns: 20px 85px;
+    color: #044F41;
+}
+
+.rm-fp{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+
+
+.forgot-p a{
+
+    
+    color:rgb(0, 0, 0);
+} 
+ .forgot-p a:hover{
+    color:blue;
+    text-decoration:underline;
+}
+.btn{
+    font-size:1.1rem;
+    padding:8px 0;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    width:100%;
+    background: #044F41;
+    color:white;
+    cursor:pointer;
+    transition:0.9s;
+}
+.btn:hover{
+    background:#07001f;
+}
+
+.icons{
+    border-top: 1px solid #044F41;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0 20px 0;
+    padding-top: 20px;
+}
+
+.icons i{
+    color: #044F41;
+    padding:0.8rem 1.5rem;
+    border-radius:10px;
+    font-size:1.5rem;
+    cursor:pointer;
+    border:2px solid #dfe9f5;
+    transition:0.5s;
+}
+
+
+.icons i:hover{
+    background-color: #044F41;
+    color: #DFE00E;
+
+}
+
+.links{
+    display:flex;
+    justify-content: center;
+    gap: 5px;
+    font-weight:bold;
+}
+
+.links button{
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+}
+
+
+.links button:hover{
+    color: #044F41;
+}
+
+form{
+    margin-bottom: 2px;
+}
+
+@media (min-width: 768px){
+
+    *{
+        font-size: 15px;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding-inline: 200px; */
+        
+    }
+
+    .container{
+        width: 50%;
+        border-radius: 8px;
+    }
+
+    .form-title{
+        padding-block: 10px;
+        font-size: 2em;
+    }
+
+    input{
+        padding: 10px 15px;
+
+    }
+
+    .input-group label{
+        top: -1.8em;
+    }
+
+    .rm label{
+        width: 150px;
+        padding-left: 10px;
+    }
+
+
+    .icons{
+        margin-block: -10px;
+    }
+
+    .icons i{
+        font-size: 1em;
+    }
+
+}
+
+@media (min-width: 1280px){
+
+    *{
+        font-size: 15px;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding-inline: 200px; */
+        
+    }
+
+    .container{
+        width: 40%;
+        border-radius: 8px;
+    }
+
+    .form-title{
+        padding-block: 10px;
+        font-size: 2em;
+    }
+
+    input{
+        font-size: 15px;
+        padding: 10px;
+    }
+
+
+    input::placeholder{
+        font-size: 15px;
+    }
+
+    .input-group label{
+        top: -2.2em;
+    }
+
+    input:focus{
+        border: 2px solid #65d3ff;
+    }
+
+    input:focus~label,input:not(:placeholder-shown)~label{
+        top: -4.5em;
+    }
+
+    .rm label{
+        width: 150px;
+        padding-left: 10px;
+    }
+
+    .btn{
+        font-size: 18spx;
+        padding-block: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .icons{
+        padding-block: 30px;
+    }
+
+    .icons i{
+        font-size: 1em;
+    }
+
+    
+    .links{
+        gap: 10px;
+    }
+
+}
+
